@@ -21,15 +21,16 @@ const parser = new ReadLine()
 const port = new SerialPort('COM4', {
   baudRate: 9600
 })
+port.pipe(parser)
 
 io.on('connection', socket => {
   console.log("Socket conectado")
   
-  port.on('open', () => {
+  parser.on('open', () => {
     console.log("Conexión abierta")
     
   })
-  port.on('data', data => {
+  parser.on('data', data => {
     d = parseInt(data)
     console.log(d)
     io.emit('hi', d)    
