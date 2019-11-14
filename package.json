@@ -4,13 +4,20 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "nodemon src/"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "bootstrap": "^4.3.1",
+    "ejs": "^2.7.1",
     "express": "^4.17.1",
-    "serialport": "^7.1.5"
+    "morgan": "^1.9.1",
+    "serialport": "^7.1.5",
+    "socket.io": "^2.3.0"
+  },
+  "devDependencies": {
+    "nodemon": "^1.19.4"
   }
 }

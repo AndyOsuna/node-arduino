@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Arduino - Node.js</title>
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+</head>
+<body>
+
+  <div class="jumbotron">
+    <h1 class="display-3 text-center">Arduino y Node.js</h1>
+    
+    <hr class="my-2">
+    
+    <p class="lead">El proyecto consistirá en un Arduino enviando datos al servidor y mostrandola en esta web.</p>
+    <p class="lead">
+      <div id="data"></div>
+    </p>
+  </div>
+
+  <script src="socket.io/socket.io.js"></script>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
